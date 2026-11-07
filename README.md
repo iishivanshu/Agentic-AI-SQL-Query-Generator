@@ -32,7 +32,8 @@ The system uses multiple specialized agents that collaborate to process queries:
 
 1. **Clone the repository**
 ```bash
-   cd agentic-sql-ai
+   git clone https://github.com/iishivanshu/Agentic-AI-SQL-Query-Generator.git
+   cd Agentic-AI-SQL-Query-Generator
 ```
 
 2. **Install dependencies**
@@ -76,7 +77,7 @@ python -m app.main
 
 ## 📁 Project Structure
 ```
-agentic-sql-ai/
+Agentic-AI-SQL-Query-Generator/
 ├── app/
 │   ├── agents/
 │   │   ├── schema_agent.py          # Database schema retrieval
@@ -93,9 +94,14 @@ agentic-sql-ai/
 │   ├── orchestrator/
 │   │   └── main_router.py           # Agent orchestration
 │   └── main.py                      # Application entry point
-├── .env                              # Environment variables
-├── requirements.txt                  # Python dependencies
-└── README.md                         # This file
+├── frontend/
+│   └── streamlit_app.py             # Streamlit web interface
+├── import_csv.py                    # Script to import weapons dataset
+├── load_ev_market.py                # Script to load EV market dataset
+├── setup_sample_db.py               # Interactive sample database setup
+├── .env                             # Environment variables
+├── requirements.txt                 # Python dependencies
+└── README.md                        # Documentation
 ```
 
 ## 🔒 Safety Features
@@ -184,4 +190,4 @@ This is a production-style template. Feel free to extend with:
 
 ---
 
-**Built by Shivanshu using Python, MySQL, and Grok AI**
+**Built by Shivanshu Sharma using Python, MySQL, and Grok AI**
